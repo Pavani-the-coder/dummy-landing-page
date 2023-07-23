@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Revlon Landing page</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+    <header>
+        <a href="#" class="logo"><img src="My project.png" alt="revlon logo"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li> 
+        </ul>
+        
+    </header>
+    <div class="content">
+        <div class="textbox">
+            <h2>Your lips can save lives<br>Choose <span >REVLON</span></h2>
+            <p>Make a statement with the world’s most iconic lipstick! The Revlon Super Lustrous Lipstick is formulated with microfine pigments for high-impact color. Its ultra-creamy saturated formula is enriched with LiquiSilk technology that moisturizes your lips and boosts hydration. It’s available in four stunning finishes – creme, matte, pearl, and sheer.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="img-box">
+            <img src="lipstick 2.png" alt="lustrous lipstick" class="lip1">
+        </div>
+    </div>
+        <ul class="thumb">
+            <li><img src="thumb 3.png" alt="lipstick" onclick="imgSlider('lipstick 2.png');changeCircleColor('#935843');changeSpanColor('#935843')"></li>
+            <li><img src="thumb 2.png" alt="lipstick" onclick="imgSlider('lipstick 1.png');changeCircleColor('#df1239');changeSpanColor('#df1239')"></li>
+            <li><img src="thumb.png" alt="lipstick" onclick="imgSlider('lip 3.png');changeCircleColor('#d8231c');changeSpanColor('#d8231c')"></li>
+            
+        </ul>
+</section>
+<script type="text/javascript">
+    function imgSlider(anything){
+       document.querySelector('.lip1').src = anything;
+    }
+    function changeCircleColor(color){
+        const circle=document.querySelector('.circle');
+        circle.style.background = color;
+    }
+    
+</script>
+</body>
+</html>

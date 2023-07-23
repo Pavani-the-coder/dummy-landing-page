@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    /*background: linear-gradient(to right,#f9e6e9,#f7dbe0,#f9c2cc,#efa3b4,#e8889d);*/
+}
+header{
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 20px 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position:relative;
+    max-width: 80px;
+}
+header ul{
+    list-style: none;
+position: relative;
+display: flex;
+}
+header ul li a:hover{
+    color: rgba(207, 7, 7, 0.7);
+}
+
+header ul li a{
+display:inline-block;
+color: black;
+margin-left:40px;
+text-decoration:none;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textbox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textbox h2{
+    color: #333;
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 1.4em;
+}
+.content .textbox h2 span{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #935843;
+}
+.content .textbox p{
+    color: #333;
+}
+.content .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding:10px 20px;
+    background:#935843;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.content .img-box{
+width: 600px;
+display: flex;
+justify-content: flex-end;
+padding: 50px;
+margin-top:50px ;
+
+}
+
+.content .img-box img{
+    max-width: 300px;
+}
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom:20px;
+    display: flex;
+    transform:translateX(-50%);
+}
+.thumb li {
+    list-style-type: none;
+    cursor:pointer;
+    display:inline-block;
+    margin:0 20px;
+    transition:0.5s;
+}
+.thumb li:hover{
+    transform:translateY(-15px);
+}
+.thumb li img{
+    max-width: 60px;
+}
+.circle{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#935843;
+    clip-path:circle(500px at right 800px);
+}
